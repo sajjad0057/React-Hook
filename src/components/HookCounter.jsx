@@ -1,24 +1,35 @@
-import React,{useState} from "react"
+import React, { useState } from "react";
 
+const HookCounter = () => {
+  const initialCount = 0;
+  const [count, setCount] = useState(initialCount);
+  console.log("[count,setCount] : ", count, setCount);
 
+  const increamentFive = () =>{
+      for(let i=0;i<5;i++){
+        setCount((x)=>x+1)
+      }
+      
+      
+  }
 
-const HookCounter = ()=>{
+  return (
+    <div>
+      <button className="btn btn-info btn-lg">{count}</button>
+      <br />
+      <br />
 
-    const [count,setCount] = useState(0)
-    console.log("[count,setCount] : ",count,setCount)
-
-    return (
-        <div>
-          <button onClick={()=>setCount(count+1)} className="btn btn-info">Count : {count}</button>  
-        </div>
-    )
-}
-
-
+      <button onClick={()=>setCount(count-1)} className="btn btn-success mr-5">decrease</button>
+      <button onClick={()=>setCount(initialCount)} className="btn btn-danger mr-5">reset</button>
+      <button onClick={()=>setCount(count+1)} className="btn btn-warning">increase</button>
+      <br/>
+      <br/>
+      <button onClick={increamentFive}>increment Five</button>
+    </div>
+  );
+};
 
 export default HookCounter;
-
-
 
 /**
  * Rules of Hooks:

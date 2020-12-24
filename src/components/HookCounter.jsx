@@ -15,6 +15,7 @@ const HookCounter = () => {
 
   return (
     <div>
+        <br/>
       <button className="btn btn-info btn-lg">{count}</button>
       <br />
       <br />
@@ -24,7 +25,7 @@ const HookCounter = () => {
       <button onClick={()=>setCount(count+1)} className="btn btn-warning">increase</button>
       <br/>
       <br/>
-      <button onClick={increamentFive}>increment Five</button>
+      <button onClick={increamentFive} className="btn btn-primary">increment Five</button>
     </div>
   );
 };

@@ -1,14 +1,16 @@
 import React from "react";
 import CounterOne from "./CounterOne";
-
-
+import CounterTwo from "./CounterTwo";
 
 const UseReducer = () => {
-
   return (
-    <div>
-  
+    <div className="shadow-none p-3 mb-5 mt-3 bg-light rounded container">
       <CounterOne />
+      <hr />
+      <CounterTwo />
+      <br />
+      <hr />
+
     </div>
   );
 };

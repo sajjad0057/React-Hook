@@ -1,11 +1,14 @@
 import React from "react";
 import ChangeTitle from "./ChangeTitle";
+import HookMouse from "./HookMouse";
 
 
 const UseEffect = () =>{
     return (
         <div>
             <ChangeTitle/>
+            <hr/>
+            <HookMouse/>
 
         </div>
     )

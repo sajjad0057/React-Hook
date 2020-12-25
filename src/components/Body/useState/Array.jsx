@@ -14,7 +14,7 @@ const Array=()=>{
     ))
     return(
         <div className="container">
-            <button className="btn btn-info btn-lg" onClick={AddNumber}>Add Number</button>
+            <button className="btn btn-info btn-lg" onClick={AddNumber}>Generate random Numbers</button>
             <br/>
             <hr/>
             

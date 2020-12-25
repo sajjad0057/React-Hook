@@ -28,7 +28,10 @@ const Navigation= (props) => {
             </NavItem> 
             <NavItem style={{marginRight:"10px"}}>
               <NavLink exact to="/setname" className="NavLink">useState</NavLink>
-            </NavItem>  
+            </NavItem>
+            <NavItem style={{marginRight:"10px"}}>
+              <NavLink exact to="/useEffect" className="NavLink">useEffect</NavLink>
+            </NavItem> 
           </Nav>
         <NavbarText>practice Hook</NavbarText>
         </Collapse>

@@ -7,7 +7,7 @@ const ChangeTitle = () => {
   useEffect(() => {
     console.log("useEffect Called and Update title");
     document.title = `You clicked ${count}`;
-  });
+  },[count]); // here useEffect would be executed ,only when count value changes 
 
   return (
     <div className="container">

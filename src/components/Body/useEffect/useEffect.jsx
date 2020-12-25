@@ -1,6 +1,6 @@
 import React from "react";
 import ChangeTitle from "./ChangeTitle";
-import HookMouse from "./HookMouse";
+import Mouse from "./HookMouse";
 
 
 const UseEffect = () =>{
@@ -8,7 +8,7 @@ const UseEffect = () =>{
         <div>
             <ChangeTitle/>
             <hr/>
-            <HookMouse/>
+            <Mouse/>
 
         </div>
     )

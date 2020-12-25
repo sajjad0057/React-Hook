@@ -1,15 +1,14 @@
 import React from "react";
-import './App.css';
-import HookCounter from "./components/HookCounter";
-import SetName from "./components/Name";
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/main";
 
 function App() {
   return (
     <div className="App">
-      <HookCounter/>
-      <hr/>
-      <SetName/>
-      
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
     </div>
   );
 }

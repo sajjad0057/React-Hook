@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const HookCounter = () => {
   const initialCount = 0;
   const [count, setCount] = useState(initialCount);
-  console.log("[count,setCount] : ", count, setCount);
+  //console.log("[count,setCount] : ", count, setCount);
 
   const increamentFive = () =>{
       for(let i=0;i<5;i++){

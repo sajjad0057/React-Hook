@@ -9,7 +9,7 @@ const FatchingData = () => {
     const handleJokesFetch = ()=>{
         setJokesNo(id)
     }
-    console.log("post",post);
+    //console.log("post",post);
     useEffect(()=>{
         
         axios.get(`https://jsonplaceholder.typicode.com/posts/${jokesNo}`)
@@ -19,7 +19,7 @@ const FatchingData = () => {
             
             
         })
-        .catch(err=>console.log(err))
+        .catch(err=>console.log(err.message))
         
         
     },[jokesNo])

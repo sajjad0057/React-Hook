@@ -18,7 +18,7 @@ const HookMouse = () =>{
         window.addEventListener("click",MousePossition)
         return()=>{
             console.log("called when component UnMount");    // return func call once into useEffect when component will be unmount, 
-            window.removeEventListener("click",MousePossition)  //(so we can write clean up cade into return func)
+            window.removeEventListener("click",MousePossition)  //(so we can write clean up code into return func)
         }
     },[])
     return (
@@ -30,7 +30,7 @@ const HookMouse = () =>{
 }
 
 const Mouse =()=>{
-    const [btn,btnToggle] = useState (true)
+    const [btn,btnToggle] = useState (false)
     return (
         <div >
              <button className="btn btn-danger" onClick={()=>btnToggle(!btn)}>{btn?"hide mouse possition":"see mouse possition"}</button>

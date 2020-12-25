@@ -1,5 +1,6 @@
 import React from "react";
 import ChangeTitle from "./ChangeTitle";
+import FatchingData from "./FatchingData";
 import Mouse from "./HookMouse";
 
 
@@ -9,6 +10,14 @@ const UseEffect = () =>{
             <ChangeTitle/>
             <hr/>
             <Mouse/>
+            <hr/>
+            <div>
+                <h1>
+                    Fatching Data :
+                </h1>
+                <FatchingData/>
+            </div>
+            
 
         </div>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import CounterOne from "./CounterOne";
+import CounterThree from "./CounterThree";
 import CounterTwo from "./CounterTwo";
 
 const UseReducer = () => {
@@ -9,6 +10,8 @@ const UseReducer = () => {
       <hr />
       <CounterTwo />
       <br />
+      <hr/>
+      <CounterThree/>
       <hr />
 
     </div>

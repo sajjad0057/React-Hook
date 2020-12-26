@@ -35,7 +35,10 @@ const CounterTwo = () => {
     const [count, dispatch] = useReducer(reducer, initialState);
 
     return (
+      
         <div>
+          <i>CounterTwo.jsx</i>
+          <hr/>
             <button className="btn btn-success mb-2">{count.firstCounter} and {count.secoundCounter}</button>
             <br/>
             <button className="btn btn-warning mr-2" onClick={()=>dispatch({type:"decrement"})}>Decrement</button>

@@ -1,33 +1,22 @@
-import React, { useReducer } from 'react'
+import React, {useContext } from 'react'
+import { CountContext } from "./UseReducer";
 
-const initialState = 0;
 
-const reducer = (state, action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
-    case "decrement":
-      return state - 1;
-    case "reset":
-      return initialState;
-    default:
-      return state;
-  }
-};
 
 const CounterOne = () => {
 
-    const [count, dispatch] = useReducer(reducer, initialState);
+  const Context = useContext(CountContext)
 
     return (
         <div>
+          <hr/>
           <i>CounterOne.jsx</i>
           <hr/>
-            <button className="btn btn-success mb-2">{count}</button>
+            <button className="btn btn-success mb-2">Count {Context.countState}</button>
             <br/>
-            <button className="btn btn-warning mr-2" onClick={()=>dispatch("decrement")}>Decrement</button>
-            <button className="btn btn-danger mr-2" onClick={()=>dispatch("reset")}>Reset</button>
-            <button className="btn btn-info mr-2" onClick={()=>dispatch("increment")}>Increment</button>
+            <button className="btn btn-warning mr-2" onClick={()=>Context.countDispatch("decrement")}>Decrement</button>
+            <button className="btn btn-danger mr-2" onClick={()=>Context.countDispatch("reset")}>Reset</button>
+            <button className="btn btn-info mr-2" onClick={()=>Context.countDispatch("increment")}>Increment</button>
             
             
         </div>

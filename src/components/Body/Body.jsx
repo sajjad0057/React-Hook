@@ -9,6 +9,7 @@ import UseCallback from "./useCallback/UseCallback";
 import UseMemo from "./useMemo/UseMemo";
 import UseRef from "./useRef/UseRef";
 import CustomHook from "./customHook/CustomHook";
+import FetchingDataOne from "./useReducer/FetchingDataOne";
 
 
 const Body = () => {
@@ -20,6 +21,7 @@ const Body = () => {
           <Route path="/useEffect" exact component={UseEffect}/>
           <Route path="/useContext" exact component={UseContext}/>
           <Route path="/useReducer" exact component={UseReducer}/>
+          <Route path="/fdwiths" exact component={FetchingDataOne}/>
           <Route path ="/useCallback" exact component={UseCallback}/>
           <Route path ="/useMemo" exact component={UseMemo}/>
           <Route path ="/useRef" exact component={UseRef}/>

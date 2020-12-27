@@ -1,8 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 
+
 const FetchingDataOne = (props) => {
-    console.log("FetchingDataOne Props:",props);
+    //console.log("FetchingDataOne Props:",props);
+    
+    
     const [loading,setLoading] = useState(true)
     const [error,setError] = useState('')
     const [post,setPost] = useState([])
@@ -20,7 +23,7 @@ const FetchingDataOne = (props) => {
             setError("Something went wrong !")
         })
     },[])
-    console.log("post :",post);
+    //console.log("post :",post);
 
     return (
         <div className="shadow p-3 mb-5 mt-3 bg-white rounded">
@@ -36,6 +39,7 @@ const FetchingDataOne = (props) => {
                 </ul>
             }
             {error ? error : null}
+
         </div>
     )
 }

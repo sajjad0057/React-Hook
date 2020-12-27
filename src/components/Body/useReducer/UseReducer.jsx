@@ -36,7 +36,6 @@ const UseReducer = () => {
         <hr />
         <h3>Fetching some data :</h3>
         <hr/>
-        <FetchingDataOne/>
         <FetchingDataTwo/>
       </CountContext.Provider>
     </div>

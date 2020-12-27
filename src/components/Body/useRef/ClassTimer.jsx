@@ -9,7 +9,9 @@ class ClassTimer extends Component {
     this.state = {
        timer: 0
     }
+    console.log("this.props :",this.props)
   }
+  
 
   componentDidMount() {
     this.interval = setInterval(() => {

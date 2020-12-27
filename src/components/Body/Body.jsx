@@ -8,6 +8,7 @@ import Welcome from "./Welcome";
 import UseCallback from "./useCallback/UseCallback";
 import UseMemo from "./useMemo/UseMemo";
 import UseRef from "./useRef/UseRef";
+import CustomHook from "./customHook/CustomHook";
 
 
 const Body = () => {
@@ -22,6 +23,7 @@ const Body = () => {
           <Route path ="/useCallback" exact component={UseCallback}/>
           <Route path ="/useMemo" exact component={UseMemo}/>
           <Route path ="/useRef" exact component={UseRef}/>
+          <Route path ="/customHook" exact component={CustomHook}/>
           <Route path="/" component={Welcome}/>
           
           

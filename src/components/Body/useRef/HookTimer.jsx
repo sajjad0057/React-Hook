@@ -3,6 +3,7 @@ import React, {useState, useEffect, useRef} from 'react'
 function HookTimer() {
   const [timer, setTimer] = useState(0)
   const interValRef = useRef()
+  //console.log("interValRef",interValRef);
   useEffect(() => {
     interValRef.current = setInterval(() => {
       setTimer(timer => timer + 1)

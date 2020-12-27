@@ -6,6 +6,7 @@ import UseContext from "./useContext/UseContext";
 import UseReducer from "./useReducer/UseReducer";
 import Welcome from "./Welcome";
 import UseCallback from "./useCallback/UseCallback";
+import UseMemo from "./useMemo/UseMemo";
 
 
 const Body = () => {
@@ -18,6 +19,7 @@ const Body = () => {
           <Route path="/useContext" exact component={UseContext}/>
           <Route path="/useReducer" exact component={UseReducer}/>
           <Route path ="/useCallback" exact component={UseCallback}/>
+          <Route path ="/useMemo" exact component={UseMemo}/>
           <Route path="/" component={Welcome}/>
           
           

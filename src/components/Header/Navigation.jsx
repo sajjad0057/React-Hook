@@ -37,7 +37,10 @@ const Navigation= (props) => {
             </NavItem>
             <NavItem style={{marginRight:"10px"}}>
               <NavLink exact to="/useReducer" className="NavLink">useReducer</NavLink>
-            </NavItem>   
+            </NavItem>
+            <NavItem style={{marginRight:"10px"}}>
+              <NavLink exact to="/useCallback" className="NavLink">useCallback</NavLink>
+            </NavItem>     
           </Nav>
         <NavbarText>practice Hook</NavbarText>
         </Collapse>

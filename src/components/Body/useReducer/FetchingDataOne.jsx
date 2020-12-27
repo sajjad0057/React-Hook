@@ -30,7 +30,7 @@ const FetchingDataOne = (props) => {
                 <ul>
                     {
                         post.map(item=>{
-                            return <li>{item.title}</li>
+                            return <li key={item.id}>{item.title}</li>
                         })
                     }
                 </ul>

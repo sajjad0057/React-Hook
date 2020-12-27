@@ -5,7 +5,8 @@ import UseState from "./useState/UseState";
 import UseContext from "./useContext/UseContext";
 import UseReducer from "./useReducer/UseReducer";
 import Welcome from "./Welcome";
-import FetchingDataTwo from "./useReducer/FetchingDataTwo";
+import UseCallback from "./useCallback/UseCallback";
+
 
 const Body = () => {
   return (
@@ -16,7 +17,7 @@ const Body = () => {
           <Route path="/useEffect" exact component={UseEffect}/>
           <Route path="/useContext" exact component={UseContext}/>
           <Route path="/useReducer" exact component={UseReducer}/>
-          <Route path ="/fetch_withuseReduce" exact component={FetchingDataTwo}/>
+          <Route path ="/useCallback" exact component={UseCallback}/>
           <Route path="/" component={Welcome}/>
           
           

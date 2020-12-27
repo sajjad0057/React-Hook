@@ -3,6 +3,7 @@ import CounterOne from "./CounterOne";
 import CounterThree from "./CounterThree";
 import CounterTwo from "./CounterTwo";
 import FetchingDataOne from "./FetchingDataOne";
+import FetchingDataTwo from "./FetchingDataTwo";
 
 export const CountContext = React.createContext()
 
@@ -36,6 +37,7 @@ const UseReducer = () => {
         <h3>Fetching some data :</h3>
         <hr/>
         <FetchingDataOne/>
+        <FetchingDataTwo/>
       </CountContext.Provider>
     </div>
   );

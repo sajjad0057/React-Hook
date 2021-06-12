@@ -5,7 +5,7 @@ function HookTimer() {
   const interValRef = useRef()
   //console.log("interValRef",interValRef);
   useEffect(() => {
-    interValRef.current = setInterval(() => {
+    interValRef.current = setInterval(() => {  
       setTimer(timer => timer + 1)
     }, 1000)
     return () => {
@@ -15,7 +15,10 @@ function HookTimer() {
   return (
     <div>
       HookTimer - {timer} -
-      <button onClick={() => clearInterval(interValRef.current)}>Clear Timer</button>
+      <button onClick={() => clearInterval(interValRef.current)}>Clear Timer</button> 
+      {/* here setInterval() access using interValRef.current ref, 
+       otherwise we cann't access in the function of useEffect  local area
+     */}
     </div>
   )
 }

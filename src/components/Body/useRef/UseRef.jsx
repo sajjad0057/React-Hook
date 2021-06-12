@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from 'react'
 import ClassTimer from './ClassTimer'
+import Form from './Form'
 import HookTimer from './HookTimer'
 
 const UseRef = () =>  {
 	const inputRef = useRef(null)
 	useEffect(() => {
+            console.log("Form ---->",inputRef.current); //
 		inputRef.current.focus()
 	}, [])
 	return (
@@ -23,6 +25,9 @@ const UseRef = () =>  {
             <h3><i>Hook Timer :</i></h3>
             <br/>
             <HookTimer/>
+            <hr />
+            <Form ref={inputRef}/>  
+            {/* forwardRef  */}
 
 		</div>
 	)

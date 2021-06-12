@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import UseEffect from "./useEffect/UseEffect";
-import UseState from "./useState/UseState";
+// import UseEffect from "./useEffect/UseEffect";
+// import UseState from "./useState/UseState";
 import UseContext from "./useContext/UseContext";
 import UseReducer from "./useReducer/UseReducer";
 import Welcome from "./Welcome";
@@ -17,8 +17,8 @@ const Body = () => {
       <div>
           <Switch>
           
-          <Route path="/setname" exact component={UseState}/>
-          <Route path="/useEffect" exact component={UseEffect}/>
+          {/* <Route path="/setname" exact component={UseState}/> */}
+          {/* <Route path="/useEffect" exact component={UseEffect}/> */}
           <Route path="/useContext" exact component={UseContext}/>
           <Route path="/useReducer" exact component={UseReducer}/>
           <Route path="/fdwiths" exact component={FetchingDataOne}/>
